@@ -40,4 +40,4 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           build-args: |
-            TASKFILE_VERSION=3.31.0
+            TASKFILE_VERSION=${{ github.ref_name }}
